@@ -449,7 +449,7 @@ class EscPosEncoder {
      *
      */
     image(element, width, height, algorithm, threshold) {
-        if (width % 8 !== 0) {
+  /*      if (width % 8 !== 0) {
             throw new Error('Width must be a multiple of 8');
         }
 
@@ -464,7 +464,7 @@ class EscPosEncoder {
         if (typeof threshold === 'undefined') {
             threshold = 128;
         }
-
+*/
         let canvas = createCanvas(width, height);
         let context = canvas.getContext('2d');
         context.drawImage(element, 0, 0, width, height);
